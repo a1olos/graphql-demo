@@ -1,14 +1,16 @@
-package com.aiolos.graphqldemo;
+package com.aiolos.graphqldemo.entity;
 
-import java.util.Arrays;
-import java.util.List;
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
+@Data
+@TableName("tb_author")
 public class Author {
     private String id;
     private String firstName;
     private String lastName;
 
-    public Author(String id, String firstName, String lastName) {
+  /*  public Author(String id, String firstName, String lastName) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -26,5 +28,5 @@ public class Author {
 
     public String getId() {
         return id;
-    }
+    }*/
 }

@@ -10,8 +10,8 @@ type Book {
     author: Author
 }
 
-type Author {
-    id: ID
-    firstName: String
-    lastName: String
-}
+#type Author {
+#    id: ID
+#    firstName: String
+#    lastName: String
+#}

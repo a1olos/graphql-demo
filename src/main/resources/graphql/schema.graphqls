@@ -1,4 +1,11 @@
+type Mutation {
+    createBook(input: BookInput): Book
+}
+
 type Query {
-    bookById(id: ID): Book
+    bookList: [Book]
+#    bookByWhere(request:Object):
+    bookById(id: ID!): Book
     authorById(id: ID): Author
+
 }
